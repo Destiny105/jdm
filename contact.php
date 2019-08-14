@@ -1,5 +1,6 @@
 <?php
 	$name = $_POST ['name'];
+	$visitor_email = $_POST ['email']
 	$email = $_POST ['email'];
 	$message = $_POST ['message'];
 /*
@@ -68,7 +69,7 @@ catch (\Exception $e)
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
 
-    header('Content-Type: application/json');
+    header('Destiny105/jdm/index.html');
 
     echo $encoded;
 }
